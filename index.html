@@ -49,8 +49,16 @@ Use readAsBinaryString: (when available) <input type="checkbox" name="userabs" c
 <p id="demo"></p>
 
 <script>
+	$(document).ready(function(){
+		$.ajax({
+			url: 'findKPIv2.js',
+			type: 'GET',
+			async: false,
+			success: function(response)
+		})
+	})
 	
-  
+	
     function myFunction() {
         document.getElementById("demo").innerHTML = "changeme";
     }
