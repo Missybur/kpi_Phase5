@@ -43,6 +43,18 @@ Use Web Workers: (when available) <input id="options" type="checkbox" name="usew
 Use Transferrables: (when available) <input type="checkbox" name="xferable" checked><br />
 Use readAsBinaryString: (when available) <input type="checkbox" name="userabs" checked><br />
 <pre id="out"></pre>
+	
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+	
+  
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "changeme";
+    }
+</script>
 <br />
 <!-- uncomment the next line here and in xlsxworker.js for encoding support -->
 <!--<script src="dist/cpexcel.js"></script>-->
